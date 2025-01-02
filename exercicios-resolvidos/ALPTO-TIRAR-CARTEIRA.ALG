@@ -1,17 +1,17 @@
-Algoritmo "semnome"
+Algoritmo "apto-tirar-carteira"
 // 
 //  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// DescriÃ§Ã£o   : Esse programa calcula a idade do usuÃ¡rio e define se estÃ¡ apto a tirar carteira de habilitaÃ§Ã£o ou nÃ£o
+// Autor(a)    : Raniely Dayany
 // Data atual  : 20/05/2024
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
    ano_atual,ano_nasc,idade:inteiro
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
    Escreval ("-------------------------")
-   Escreval ("DEPARTAMENTO DE TRÂNSITO")
+   Escreval ("DEPARTAMENTO DE TRÃ‚NSITO")
    Escreval ("-------------------------")
    Escreva  ("Ano atual (yyyy)?:" )
    Leia (ano_atual)
