@@ -1,15 +1,11 @@
-Algoritmo "semnome"
+Algoritmo "APROVADO-REPROVADO"
 // 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 20/05/2024
+// Descriï¿½ï¿½o   : Calcula a mÃ©dia do aluno e dÃ¡ o resultado se ele foi aprovado ou nÃ£o.
+
 Var
-// Seção de Declarações das variáveis 
 
    N1,N2,media:real
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
    Escreval ("-------------------")
    Escreval ("Escola Javali")
    Escreval ("-------------------")
@@ -19,8 +15,8 @@ Inicio
    Leia (N2)
    media<-(N1+N2)/2
    Se (media >=7) entao
-        Escreva ("Média ",media," Aluno aprovado!")
+        Escreva ("Mï¿½dia ",media," Aluno aprovado!")
    Senao
-        Escreva ("Média ",media," Aluno reprovado!")
+        Escreva ("Mï¿½dia ",media," Aluno reprovado!")
    FimSe
 Fimalgoritmo

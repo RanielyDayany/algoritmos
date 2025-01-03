@@ -1,27 +1,24 @@
-Algoritmo "ANALISADOR_STRING"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 30/09/2024
+Algoritmo "ANALISADOR_STRING"  
+// Descriï¿½ï¿½o   : Analisa o nome digitado,quantas letras possui,a primeira letra e assim por diante
+
 Var
-// Seção de Declarações das variáveis 
+
    N:caractere
    C:Inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+
    Escreva ("Digite seu nome:")
    Leia (N)
    EscrevaL ("Total de letras do seu nome:" ,Compr (N))
-   EscrevaL ("Seu nome em maiúsculo:",Maiusc(N))
-   EscrevaL ("Seu nome em minúsculo:",Minusc(N))
-   EscrevaL ("A primeira letra do seu nome é:",Copia(Maiusc(N), 1,1))
-   EscrevaL ("A última letra do seu nome é:",Copia (Maiusc (N) ,Compr(N),1))
-   EscrevaL ("Seu nome tem a letra A na posição:",Pos("A",Maiusc(N)))
-   EscrevaL ("O cóigo da letra A é:",Asc ("A"))
-   EscrevaL ("A letra do código 65 é:",Carac (65))
-   Escreva ("Seu nome ao contrário é:")
+   EscrevaL ("Seu nome em maiï¿½sculo:",Maiusc(N))
+   EscrevaL ("Seu nome em minï¿½sculo:",Minusc(N))
+   EscrevaL ("A primeira letra do seu nome ï¿½:",Copia(Maiusc(N), 1,1))
+   EscrevaL ("A ï¿½ltima letra do seu nome ï¿½:",Copia (Maiusc (N) ,Compr(N),1))
+   EscrevaL ("Seu nome tem a letra A na posiï¿½ï¿½o:",Pos("A",Maiusc(N)))
+   EscrevaL ("O cï¿½igo da letra A ï¿½:",Asc ("A"))
+   EscrevaL ("A letra do cï¿½digo 65 ï¿½:",Carac (65))
+   Escreva ("Seu nome ao contrï¿½rio ï¿½:")
    Para C <- Compr(N) ate 1 passo -1 faca
         Escreva (Copia (Maiusc (N),C,1))
    FimPara
