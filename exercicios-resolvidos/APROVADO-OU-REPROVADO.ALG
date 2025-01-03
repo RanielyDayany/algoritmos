@@ -6,8 +6,8 @@ Var
 
    N1,N2,media:real
 Inicio
-   Escreval ("-------------------")
-   Escreval ("Escola Javali")
+   EscrevaL ("-------------------")
+   EscrevaL ("Escola Javali")
    Escreval ("-------------------")
    Escreva ("Primeira nota?")
    Leia (N1)
