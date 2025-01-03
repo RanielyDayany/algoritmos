@@ -16,7 +16,7 @@ Inicio
    EscrevaL ("A primeira letra do seu nome é:",Copia(Maiusc(N), 1,1))
    EscrevaL ("A última letra do seu nome é:",Copia (Maiusc (N) ,Compr(N),1))
    EscrevaL ("Seu nome tem a letra A na posição:",Pos("A",Maiusc(N)))
-   EscrevaL ("O cóigo da letra A é:",Asc ("A"))
+   EscrevaL ("O código da letra A é:",Asc ("A"))
    EscrevaL ("A letra do código 65 é:",Carac (65))
    Escreva ("Seu nome ao contrário é:")
    Para C <- Compr(N) ate 1 passo -1 faca
