@@ -8,7 +8,7 @@ Var
 Inicio
    EscrevaL ("-------------------")
    EscrevaL ("Escola Javali")
-   Escreval ("-------------------")
+   EscrevaL ("-------------------")
    Escreva ("Primeira nota?")
    Leia (N1)
    Escreva ("Segunda nota?")
