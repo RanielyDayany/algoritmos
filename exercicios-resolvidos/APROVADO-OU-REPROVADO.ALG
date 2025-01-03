@@ -1,6 +1,6 @@
 Algoritmo "APROVADO-REPROVADO"
 // 
-// Descri��o   : Calcula a média do aluno e dá o resultado se ele foi aprovado ou não.
+// Descrição   : Calcula a média do aluno e dá o resultado se ele foi aprovado ou não.
 
 Var
 
@@ -15,8 +15,8 @@ Inicio
    Leia (N2)
    media<-(N1+N2)/2
    Se (media >=7) entao
-        Escreva ("M�dia ",media," Aluno aprovado!")
+        Escreva ("Média ",media," Aluno aprovado!")
    Senao
-        Escreva ("M�dia ",media," Aluno reprovado!")
+        Escreva ("Média ",media," Aluno reprovado!")
    FimSe
 Fimalgoritmo
