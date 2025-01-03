@@ -1,16 +1,15 @@
 Algoritmo "ALUGUEL_DE_CARRO"
 // 
 //  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+// Descriï¿½ï¿½o   : Calcula o valor total a pagar pelo aluguel do carro de acordo com os km rodados.
+// Autor(a)    : Raniely Dayany
 // Data atual  : 28/08/2024
-Var
-// Seção de Declarações das variáveis 
+Var 
 
    km,TotalKm,TotalD,Total:Real
    D:Inteiro
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+Inicio 
+
     Escreva ("Quantos km rodados?")
     Leia (km)
     Escreva ("Por quantos dias foi alugado?")
