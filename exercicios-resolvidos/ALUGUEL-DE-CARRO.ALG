@@ -1,9 +1,6 @@
-Algoritmo "ALUGUEL_DE_CARRO"
-// 
-//  
+Algoritmo "ALUGUEL_DE_CARRO" 
 // Descrição   : Calcula o valor total a pagar pelo aluguel do carro de acordo com os km rodados.
-// Autor(a)    : Raniely Dayany
-// Data atual  : 28/08/2024
+
 Var 
 
    km,TotalKm,TotalD,Total:Real
