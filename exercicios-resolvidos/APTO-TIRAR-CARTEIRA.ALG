@@ -4,9 +4,9 @@ Algoritmo "apto-tirar-carteira"
 Var
    ano_atual,ano_nasc,idade:inteiro
 Inicio
-   Escreval ("-------------------------")
-   Escreval ("DEPARTAMENTO DE TRÂNSITO")
-   Escreval ("-------------------------")
+   EscrevaL ("-------------------------")
+   EscrevaL ("DEPARTAMENTO DE TRÂNSITO")
+   EscrevaL ("-------------------------")
    Escreva  ("Ano atual (yyyy)?:" )
    Leia (ano_atual)
    Escreva ("Ano de nascimento (yyyy)?:")
