@@ -1,18 +1,14 @@
-Algoritmo "
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 24/06/2024
-Var
-// Seção de Declarações das variáveis 
+Algoritmo "bangu-madureira"
 
+// DescriÃ§Ã£o : Calcula a diferenÃ§a de gols em uma partida de futebol.
+
+Var 
    M,B,G:Real
+
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-       Escreval ("----------------------")
-       Escreval ("  Bangu x Madureira")
-       Escreval ("----------------------")
+       EscrevaL ("----------------------")
+       EscrevaL ("  Bangu x Madureira")
+       EscrevaL ("----------------------")
        Escreva ("Quantos gols do Bangu?")
        Leia (B)
        Escreva ("Quantos gols do Madureira?")
@@ -25,15 +21,15 @@ Inicio
             FimSe
        FimSe
        Se (G >=5) entao
-          Escreval ("Diferença:",G)
+          EscrevaL ("DiferenÃ§a:",G)
           Escreva ("Status:Goleada")
        senao
             Se (G <=4) e (G>0) entao
-               Escreval ("Diferença:",G)
+               EscrevaL ("DiferenÃ§a:",G)
                Escreva ("Status:Partida normal")
             senao
                  Se (G=0) entao
-                    Escreval ("Diferença:", G)
+                    EscrevaL ("DiferenÃ§a:", G)
                     Escreva ("Status:Empate")
                  FimSe
             FimSe
