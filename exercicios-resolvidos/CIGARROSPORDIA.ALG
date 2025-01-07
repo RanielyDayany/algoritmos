@@ -1,24 +1,18 @@
-Algoritmo "Cigarrospordia"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 28/08/2024
+Algoritmo "cigarros-por-dia"
+  
+// DescriÃ§Ã£o:Calcula quantos dias perdidos de vida com o uso do cigarro.
 Var
-// Seção de Declarações das variáveis 
   C:Inteiro
   A,QtdD,D:Real
-  
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-     Escreva ("Quantos cigarros você fuma por dia?")
+     Escreva ("Quantos cigarros vocÃª fuma por dia?")
      Leia (C)
-     Escreva ("Há quantos anos você fuma?")
+     Escreva ("HÃ¡ quantos anos vocÃª fuma?")
      Leia (A)
      D <- A *365
      QtdD <-(C * D) /144
-     Escreva ("Você perdeu ",QtdD:5:0," dias de vida")
+     Escreva ("VocÃª perdeu ",QtdD:5:0," dias de vida")
      
 
 Fimalgoritmo
