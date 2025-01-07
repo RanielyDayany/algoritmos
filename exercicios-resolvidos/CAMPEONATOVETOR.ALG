@@ -1,21 +1,16 @@
-Algoritmo "CAMPEONATOVETOR"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 07/10/2024
+Algoritmo "campeonato-vetor"
+ 
+// DescriÃ§Ã£o   : Cria a relaÃ§Ã£o dos jogos com os times digitados pelo usuÃ¡rio.
 Var
-// Seção de Declarações das variáveis 
    vet:vetor [1..3] de caractere
    i,t:inteiro
 
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+Inicio 
    EscrevaL("   CAMPEONATO DE FUTEBOL")
    EscrevaL("-----------------------------")
    Para i <-1 ate 3 faca
-      Escreva("Nome do ",i,"º time:")
+      Escreva("Nome do ",i,"Âº time:")
       Leia (vet[i])
    FimPara
    Para i<- 1 ate 3 faca
