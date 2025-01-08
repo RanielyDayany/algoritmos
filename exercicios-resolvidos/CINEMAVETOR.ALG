@@ -1,11 +1,8 @@
-Algoritmo "CINEMAVETOR"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 08/10/2024
+Algoritmo "cinema-vetor"
+
+// DescriÃ§Ã£o   :Seleciona a poltrona escolhida pelo usuÃ¡rio.
+
 Var
-// Seção de Declarações das variáveis 
    B:vetor [1..10] de caractere
    C:vetor [1..10] de caractere
    R,F:caractere
@@ -21,7 +18,7 @@ inicio
          Escreva ("[--]")
       FimSe
    FimPara
-   Escreval ()
+   EscrevaL ()
    EscrevaL("---------------------------------------------------")
    Para i <- 1 ate 10 faca
       Se (C[i]="") entao
@@ -34,8 +31,7 @@ inicio
    EscrevaL("----------------------------------------------------")
 fimprocedimento
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+Inicio 
 
    Repita
        MostrarFileira()
