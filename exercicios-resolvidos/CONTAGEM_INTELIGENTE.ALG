@@ -1,26 +1,22 @@
 Algoritmo "semnome"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 21/06/2024
+
+// DescriÃ§Ã£o   :IrÃ¡ fazer a contagem dos nÃºmeros informados pelo usuÃ¡rio
+
 Var
-   // Seção de Declarações das variáveis
    I,F,contador:Inteiro
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   Escreval("-----------------------")
-   Escreval(" Contagem Inteligente")
-   Escreval("-----------------------")
-   Escreva("Qual o início da contagem? ")
+   EscrevaL("-----------------------")
+   EscrevaL(" Contagem Inteligente")
+   EscrevaL("-----------------------")
+   Escreva("Qual o inÃ­cio da contagem? ")
    Leia (I)
    Escreva ("Qual o fim da contagem? ")
    Leia (F)
    contador <-I
-   Escreval ("Início:",I)
-   Escreval ("Fim:",F)
-   Escreval ("Contando...")
+   EscrevaL ("InÃ­cio:",I)
+   EscrevaL ("Fim:",F)
+   EscrevaL ("Contando...")
    Se (I>F) entao
       Enquanto (contador >=F) faca
          Escreva (contador)
