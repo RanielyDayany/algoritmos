@@ -1,20 +1,15 @@
-Algoritmo "CONTAGEM_NEG"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 01/07/2024
-Var
-// Seção de Declarações das variáveis 
+Algoritmo "contagem-neg"
 
+// DescriÃ§Ã£o : Calcula quantos nÃºmeros negativos foi digitado pelo usuÃ¡rio
+
+Var
         C,N,TotN:inteiro
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
          C<-1
          TotN <-0
-         Escreval ("Contagem de números negativos:")
+         EscrevaL("Contagem de nÃºmeros negativos:")
          Repita
-               Escreva ("Digite um número:")
+               Escreva ("Digite um nÃºmero:")
                Leia (N)
                Se (N<0) entao
                   TotN <- TotN+1
@@ -22,6 +17,6 @@ Inicio
                FimSe
                C <- C+1
          Ate (C >5)
-         Escreva ("O total de números negativos,é de ",TotN)
+         Escreva ("O total de nÃºmeros negativos,Ã© de ",TotN)
 
 Fimalgoritmo

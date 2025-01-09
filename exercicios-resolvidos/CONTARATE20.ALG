@@ -1,21 +1,17 @@
 Algoritmo "contarAte20"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 17/06/2024
-Var
-// Seção de Declarações das variáveis 
 
+// DescriÃ§Ã£o:IrÃ¡ contar atÃ© o nÃºmero 20
+
+Var
    contador:inteiro
+
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
      contador <- 0
      Enquanto (contador <=20) faca
-              Escreval (contador)
+              EscrevaL (contador)
               contador <- contador + 1
      FimEnquanto
-     Escreval ("Terminei de contar")
+     EscrevaL ("Terminei de contar")
 
 
 Fimalgoritmo
