@@ -1,26 +1,21 @@
-Algoritmo "semnome"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 14/06/2024
+Algoritmo "crianca-esperanca"
+
+// DescriÃ§Ã£o:AtravÃ©s do 'Escolha caso' o algoritmo salva o valor de doaÃ§Ã£o do usuÃ¡rio.
+
 Var
-// Seção de Declarações das variáveis 
      D:inteiro
      Valor:real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-
-     Escreval ("-------------------------------")
-     Escreval ("       CRIANÇA ESPERANÇA")
-     Escreval ("-------------------------------")
-     Escreval ("Muito obrigado por ajudar")
-     Escreval ("[1] Para doar R$10")
-     Escreval ("[2] Para doar R$25")
-     Escreval ("[3] Para doar R$50")
-     Escreval ("[4] Para doar outros valores.")
-     Escreval ("[5] Para cancelar")
+     EscrevaL ("-------------------------------")
+     EscrevaL ("       CRIANÃ‡A ESPERANÃ‡A")
+     EscrevaL ("-------------------------------")
+     EscrevaL ("Muito obrigado por ajudar")
+     EscrevaL ("[1] Para doar R$10")
+     EscrevaL ("[2] Para doar R$25")
+     EscrevaL ("[3] Para doar R$50")
+     EscrevaL ("[4] Para doar outros valores.")
+     EscrevaL ("[5] Para cancelar")
      Leia (D)
      Escolha (D)
              Caso 1
@@ -30,13 +25,13 @@ Inicio
              Caso 3
                   Valor <- 50
              Caso 4
-                  Escreva ("Qual o valor da doação? R$")
+                  Escreva ("Qual o valor da doaÃ§Ã£o? R$")
                   Leia (Valor)
              Caso 5
                   Valor <- 0
      FimEscolha
-     Escreval ("-------------------------------")
-     Escreval (" Sua doação foi de R$",Valor )
-     Escreval ("       Muito obrigado")
-     Escreval ("-------------------------------" )
+     EscrevaL ("-------------------------------")
+     EscrevaL (" Sua doaÃ§Ã£o foi de R$",Valor )
+     EscrevaL ("       Muito obrigado")
+     EscrevaL ("-------------------------------" )
 Fimalgoritmo

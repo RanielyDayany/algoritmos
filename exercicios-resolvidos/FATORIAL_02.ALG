@@ -1,18 +1,14 @@
-Algoritmo "FATORIAL"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 01/07/2024
+Algoritmo "fatorial"
+
+// DescriÃ§Ã£o: Calcula o fatorial de um nÃºmero.
+
 Var
-// Seção de Declarações das variáveis 
       N,F,C:inteiro
       R:caractere
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+Inicio 
      Repita
-           Escreva ("Digite um número:")
+           Escreva ("Digite um nÃºmero:")
            Leia (N)
            C<- N
            F<-1
@@ -20,12 +16,9 @@ Inicio
                  F<- F*C
                  C<- C-1
            Ate ( C <1)
-           Escreval ("O valor do fatorial de ",N," é igual a ",F)
+           EscrevaL ("O valor do fatorial de ",N," Ã© igual a ",F)
            Escreva ("Quer continuar? [S/N]")
            Leia (R)
            LimpaTela
      Ate (R= "N")
-     
-
-
 Fimalgoritmo

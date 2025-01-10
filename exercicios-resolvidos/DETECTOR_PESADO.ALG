@@ -1,12 +1,8 @@
-Algoritmo "DETECTOR_PESADO"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 08/07/2024
-Var
-// Seção de Declarações das variáveis 
+Algoritmo "detector-pesado"
 
+// DescriÃ§Ã£o: Identifica qual a pessoa com maior peso.
+
+Var
     Nome,Pesado:Caractere
     Mai,Peso:Real
     I:Inteiro
@@ -15,16 +11,14 @@ Var
        LimpaTela
        EscrevaL ("-----------------------------")
        EscrevaL ("    DETECTOR DE PESADO       ")
-       EscrevaL ("Maior peso até agora:",Mai,"kg")
+       EscrevaL ("Maior peso atÃ© agora:",Mai,"kg")
        EscrevaL ("-----------------------------")
 
     FimProcedimento
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+Inicio 
 
    Topo()
    Para I <-1 ate 5 faca
-
        Escreva ("Digite o nome:")
        Leia (Nome)
        Escreva("Digite o peso de ",Nome, ":")
@@ -36,9 +30,6 @@ Inicio
        Topo()
    FimPara
    LimpaTela
-    EscrevaL ("A pessoa mais pesada foi ",Pesado, ",com ",Mai,"kg")
+   EscrevaL ("A pessoa mais pesada foi ",Pesado, ",com ",Mai,"kg")
     
-    
-    
-
 Fimalgoritmo

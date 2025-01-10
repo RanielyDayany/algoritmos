@@ -1,4 +1,6 @@
-Algoritmo "DISSECANDO_MATRIZES"
+Algoritmo "dissecando-matrizes"
+
+//Descri√ß√£o:Cria uma matriz 4 por 4 e o usu√°rio seleciona a parte a ser exibida.
 
 Var
    m:vetor [1..4,1..4] de inteiro
@@ -63,8 +65,6 @@ inicio
 fimprocedimento
 
 Inicio
-   //Criar uma matriz de 4 ordem,e perguntar ao usuario se ele quer que seja exibido
-   //a diagonal principal,o trianqulo superior da dp ou o triangulo inferior da dp
    Para l<- 1 ate 4 faca
       Para c<-1 ate 4 faca
          Escreva("Digite um valor para [",l,",",c,"]:")
@@ -78,11 +78,11 @@ Inicio
       EscrevaL("---------------------------------------------")
       EscrevaL("1-Matriz inteira")
       EscrevaL("2-Diagonal Principal")
-      EscrevaL("3-Tri‚ngulo superior da Diagonal Principal")
-      EscrevaL("4-Tri‚ngulo inferior da Diagonal Principal")
+      EscrevaL("3-Tri√¢ngulo superior da Diagonal Principal")
+      EscrevaL("4-Tri√¢ngulo inferior da Diagonal Principal")
       EscrevaL("5-Sair")
       Repita
-         EscrevaL("-------OP«√O: ")
+         EscrevaL("-------OP√á√ÉO: ")
          Leia(op)
          LimpaTela
       Ate (op >=1) e (op <=5)
@@ -101,7 +101,4 @@ Inicio
          EscrevaL("ENCERRANDO..")
       FimEscolha
    Ate (op=5)
-
-
-
 Fimalgoritmo
