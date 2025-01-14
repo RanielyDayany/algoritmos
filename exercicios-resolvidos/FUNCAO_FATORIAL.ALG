@@ -1,5 +1,6 @@
-Algoritmo "FUNCAO_FATORIAL"
+Algoritmo "funcao-fatorial"
 
+//Descrição:Calcula o fatorial de um número com o uso da função.
 Var
    N,F:Inteiro
 Funcao Fatorial (V:inteiro):Inteiro
@@ -11,15 +12,11 @@ inicio
       R<- R*C
    FimPara
    Retorne R
-
 FimFuncao
 
 Inicio
-
-   Escreva ("Digite um n�mero:")
+   Escreva ("Digite um número:")
    Leia (N)
    F<-Fatorial (N)
-   Escreva ("O fatorial do n�mero ",N,"! �",F)
-
-
+   Escreva ("O fatorial do número ",N,"! é",F)
 Fimalgoritmo

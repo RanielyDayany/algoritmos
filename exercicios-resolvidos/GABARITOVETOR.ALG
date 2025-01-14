@@ -1,27 +1,20 @@
-Algoritmo "GABARITOVETOR"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 07/10/2024
+Algoritmo "gabarito-vetor"
+
+// DescriÃ§Ã£o:Calcula a nota de cada aluno e a mÃ©dia da turma usando vetor.
+
 Var
-   // Seção de Declarações das variáveis
    vet:vetor [1..5] de caractere
    nome:vetor[1..3] de caractere
    nota:vetor[1..3] de inteiro
    c,r,i,notas,a:inteiro
    media:real
 
-
-
-
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
    notas<-0
    EscrevaL (" PASSO 1 - Cadastro de Gabarito")
    EscrevaL ("---------------------------------")
    Para c <- 1 ate 5 faca
-      Escreva ("Questão ",c,":")
+      Escreva ("QuestÃ£o ",c,":")
       Leia (vet[c])
    FimPara
    LimpaTela
@@ -33,7 +26,7 @@ Inicio
       Leia(nome[a])
       EscrevaL ("RESPOSTAS DADAS:")
       Para r <-1 ate 5 faca
-         Escreva("Questão ",r,":")
+         Escreva("QuestÃ£o ",r,":")
          Leia (vet[r])
          Se (vet[c] = vet[r]) entao
             nota[a]<-nota[a]+2
@@ -49,8 +42,5 @@ Inicio
    FimPara
    EscrevaL("--------------------------")
    media<-notas/3
-   Escreva ("Média da turma:",media:5:2)
-
-
-
+   Escreva ("MÃ©dia da turma:",media:5:2)
 Fimalgoritmo

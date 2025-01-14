@@ -1,11 +1,8 @@
-Algoritmo "FUNCAO_FIBONACCI_REF"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 30/09/2024
+Algoritmo "funcao-fibonacci-ref"
+ 
+// DescriÃ§Ã£o:Cria um funÃ§Ã£o para mostrar a escala Fibonacci.
+
 Var
-// Seção de Declarações das variáveis 
    T1,T2,T3,I:Inteiro
 Funcao ProximoFibonacci (var N1,N2:Inteiro):Inteiro
 var
@@ -18,7 +15,6 @@ Inicio
 FimFuncao
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
    T1 <-0
    EscrevaL (T1)
    T2 <-1
@@ -28,5 +24,4 @@ Inicio
         EscrevaL(T3)
    
    FimPara
-
 Fimalgoritmo
