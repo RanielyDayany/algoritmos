@@ -1,18 +1,12 @@
-Algoritmo "NUMERO_PRIMO"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 01/07/2024
+Algoritmo "numero-primo"
+
 Var
-// Seção de Declarações das variáveis 
       N,C,ContDiv:inteiro
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+Inicio 
       C<-1
       ContDiv <-0
-      Escreva ("Quer contar até qual número?")
+      Escreva ("Quer contar atÃ© qual nÃºmero?")
       Leia (N)
       Repita
 
@@ -22,10 +16,8 @@ Inicio
             C<-C +1
       Ate (C >N)
       Se (ContDiv >2) entao
-         Escreva (" O número ",N," não é primo")
+         Escreva (" O nÃºmero ",N," nÃ£o Ã© primo")
       senao
-           Escreva (" O número ",N," é primo")
+           Escreva (" O nÃºmero ",N," Ã© primo")
       FimSe
-
-
 Fimalgoritmo

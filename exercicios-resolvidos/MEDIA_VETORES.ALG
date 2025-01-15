@@ -1,11 +1,6 @@
-Algoritmo "MEDIA_VETORES"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 04/10/2024
+Algoritmo "media-valores"
+
 Var
-   // Seção de Declarações das variáveis
    nome:vetor [1..4] de caractere
    n1:vetor [1..4] de real
    n2:vetor [1..4] de real
@@ -14,7 +9,6 @@ Var
    MT,SM :real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
    SM <-0
    MT <-0
    Para i <- 1 ate 4 faca
@@ -33,11 +27,11 @@ Inicio
    EscrevaL ("-------------------------------")
    Para i <-1 ate 4 faca
       EscrevaL ("Aluno(a) ",[i])
-      EscrevaL("Nome ",nome[i]:10," Média:",m[i]:4:1)
+      EscrevaL("Nome ",nome[i]:10," MÃ©dia:",m[i]:4:1)
       Se (m[i] > MT) entao
          Tot <- Tot +1
       FimSe
    FimPara
-   Escreva ("Ao todo temos ",Tot," alunos acima da média da turma que é ",MT:4:1)
+   Escreva ("Ao todo temos ",Tot," alunos acima da mÃ©dia da turma que Ã© ",MT:4:1)
 
 Fimalgoritmo

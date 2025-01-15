@@ -1,15 +1,10 @@
-Algoritmo "JOQUEMPO"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 05/10/2024
+Algoritmo "joquempo"
+
 Var
-   // Seção de Declarações das variáveis
    J1,J2:inteiro
 Procedimento  Joquempo(J1,J2:inteiro)
 inicio
-   EscrevaL ("    Joquempô")
+   EscrevaL ("    JoquempÃ´       ")
    EscrevaL ("-------------------")
    EscrevaL("Escolha jogador :")
    EscrevaL("1-PEDRA")
@@ -18,7 +13,6 @@ inicio
 Fimprocedimento
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
    Joquempo(J1,J2)
    Leia ( J1)
    Joquempo (J1,J2)
@@ -56,10 +50,4 @@ Inicio
          FimSe
       FimSe
    FimSe
-
-
-
-
-
-
 Fimalgoritmo

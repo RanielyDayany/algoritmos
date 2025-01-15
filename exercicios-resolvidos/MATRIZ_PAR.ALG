@@ -1,9 +1,8 @@
-Algoritmo "MATRIZ_PAR"
+Algoritmo "matriz-par"
 
 Var
    mat:vetor [1..3,1..3] de inteiro
    l,c,Totpar,par:inteiro
-
 
 Inicio
    Para l<- 1 ate 3 faca
@@ -28,7 +27,5 @@ Inicio
       FimPara
       EscrevaL()
    FimPara
-   Escreva ("Foram digitados ",Totpar," números pares.")
-
-
+   Escreva ("Foram digitados ",Totpar," nÃºmeros pares.")
 Fimalgoritmo

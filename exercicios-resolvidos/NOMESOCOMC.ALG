@@ -1,19 +1,11 @@
-Algoritmo "NOMESOCOMC"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 04/10/2024
+Algoritmo "nomes-com-c"
+
 Var
-   // Seção de Declarações das variáveis
    nome:vetor [1..10] de caractere
    SoC :vetor [1..10] de caractere
    TotN,i:inteiro
 
-
-
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
    TotN <-0
    Para i <-1 ate 10 faca
       Escreva ("Digite o nome:")
@@ -24,11 +16,8 @@ Inicio
       FimSe
    FimPara
    LimpaTela
-   EscrevaL ("Ao todo foram ",TotN," nomes começados com C,são eles:")
+   EscrevaL ("Ao todo foram ",TotN," nomes comeÃ§ados com C,sÃ£o eles:")
    Para i <- 1 ate TotN faca
       EscrevaL (SoC[i])
    FimPara
-   
-
-
 Fimalgoritmo

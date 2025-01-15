@@ -1,10 +1,9 @@
-Algoritmo "MATRIZ4ORDEM"
+Algoritmo "matriz4ordem"
 
 Var
    mat:vetor [1..4,1..4] de inteiro
    l,c,sDP,p2L,m3C,s1L:inteiro
    media1L:real
-
 
 Inicio
    sDP<-0
@@ -37,10 +36,10 @@ Inicio
       s1L<-mat[1,c]+s1L
    FimPara
    media1L<-s1L/4
-   EscrevaL("A soma dos valores da Diagonal Principal é ",sDP)
-   EscrevaL("O produto dos valores da segunda linha é ",p2L)
-   EscrevaL("O maior valor da terceira coluna é ",m3C)
-   EscrevaL("A média dos valores da primeira linha é ",media1L)
+   EscrevaL("A soma dos valores da Diagonal Principal Ã© ",sDP)
+   EscrevaL("O produto dos valores da segunda linha Ã© ",p2L)
+   EscrevaL("O maior valor da terceira coluna Ã© ",m3C)
+   EscrevaL("A mÃ©dia dos valores da primeira linha Ã© ",media1L)
    
    
 

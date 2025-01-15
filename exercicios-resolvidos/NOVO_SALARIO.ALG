@@ -1,20 +1,14 @@
-Algoritmo "semnome"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 14/06/2024
+Algoritmo "novo-salario"
+
 Var
-// Seção de Declarações das variáveis 
     Nome:Caractere
     Sal,NSal:Real
     Dep:Inteiro
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-      Escreva ("Qual o nome do funcionário?")
+Inicio 
+      Escreva ("Qual o nome do funcionÃ¡rio?")
       Leia (Nome)
-      Escreva ("Qual o salário do funcionário?")
+      Escreva ("Qual o salÃ¡rio do funcionÃ¡rio?")
       Leia (Sal)
       Escreva ("Quantos dependentes?")
       Leia (Dep)
@@ -28,6 +22,5 @@ Inicio
               OutroCaso
                    NSal <- Sal + (Sal*18/100)
       FimEscolha
-      Escreva ("O novo salário de ",Nome," será de R$",Nsal:5:2)
-
+      Escreva ("O novo salÃ¡rio de ",Nome," serÃ¡ de R$",Nsal:5:2)
 Fimalgoritmo

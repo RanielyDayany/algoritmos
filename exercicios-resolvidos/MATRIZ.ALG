@@ -1,4 +1,4 @@
-Algoritmo "MATRIZ"
+Algoritmo "matriz"
 Var
    M:vetor [1..3,1..3] de inteiro
    l,c:inteiro
@@ -16,5 +16,4 @@ Inicio
       FimPara
       EscrevaL()
    FimPara
-
 Fimalgoritmo

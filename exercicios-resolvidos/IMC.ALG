@@ -31,10 +31,10 @@ Inicio
                      EscrevaL("Obesidade Severa")
                   senao
                      Escreva ("Obesidade Mórbida")
-                                  FimSe
-                             FimSe
-                        FimSe
-                   FimSe
-              FimSe
+                  FimSe
+               FimSe
+             FimSe
          FimSe
+      FimSe
+   FimSe
 Fimalgoritmo

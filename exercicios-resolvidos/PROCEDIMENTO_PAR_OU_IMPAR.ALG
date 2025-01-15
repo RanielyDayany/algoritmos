@@ -1,25 +1,18 @@
-Algoritmo "PAR_OU_IMPAR"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 11/07/2024
-Var
-// Seção de Declarações das variáveis 
+Algoritmo "par-ou-impar"
+
+Var 
    N:Inteiro
 Procedimento ParOuImpar (V:Inteiro)
 inicio
       Se (V%2=0) entao
-         EscrevaL ("O número ",V," é par!")
+         EscrevaL ("O nÃºmero ",V," Ã© par!")
       senao
-         EscrevaL ("O número ",V," é impar!")
+         EscrevaL ("O nÃºmero ",V," Ã© impar!")
       FimSe
 FimProcedimento
 
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-
-    Escreva ("Digite um número:")
-    Leia (N)
-    ParOuImpar (N)
+Inicio 
+   Escreva ("Digite um nÃºmero:")
+   Leia (N)
+   ParOuImpar (N)
 Fimalgoritmo

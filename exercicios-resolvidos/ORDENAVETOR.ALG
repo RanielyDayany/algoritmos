@@ -1,15 +1,10 @@
-Algoritmo "ORDENAVETOR"
-// 
-//  
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 07/10/2024
+Algoritmo "ordena-vetor"
+
 Var
-// Seção de Declarações das variáveis 
   vet:vetor [1..10] de inteiro
   i,j,aux:inteiro
+
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
    Para i<- 1 ate 10 faca
       Escreva ("Digite um valor:")
       Leia (vet[i])
@@ -19,14 +14,11 @@ Inicio
         Se (vet[i] > vet[j]) entao
            aux <- vet[i]
            vet[i] <- vet[j]
-           vet[j] <-aux
-           
+           vet[j] <-aux 
         FimSe
      FimPara
    FimPara
    Para i<- 1 ate 10 faca
       Escreva ("{",vet[i],"}")
    FimPara
-   
-
 Fimalgoritmo
