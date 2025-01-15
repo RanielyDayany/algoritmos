@@ -1,11 +1,6 @@
-Algoritmo "RESERVACINEMAVETOR"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 07/10/2024
+Algoritmo "reserva-cinema-vetor"
+
 Var
-   // Seção de Declarações das variáveis
    J:vetor [1..10] de caractere
    cad:inteiro
    R:caractere
@@ -23,20 +18,20 @@ FimPara
    EscrevaL()
    EscrevaL("-------------------------------------------")
 fimprocedimento
+
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-     Repita
-        MostraFileira()
-        Escreva("Qual cadeira?: J")
-        Leia (cad)
-        Se (J[cad]="") entao
-           J[cad]<- "X"
-           EscrevaL ("Lugar reservado!")
-        senao
-           EscrevaL ("ERRO:Lugar indisponível")
-        FimSe
-        Escreva ("Quer reservar outro?[S/N]")
-        Leia (R)
-        LimpaTela
-     Ate (R="N")
+   Repita
+      MostraFileira()
+      Escreva("Qual cadeira?: J")
+      Leia (cad)
+      Se (J[cad]="") entao
+         J[cad]<- "X"
+         EscrevaL ("Lugar reservado!")
+      senao
+         EscrevaL ("ERRO:Lugar indisponÃ­vel")
+      FimSe
+      Escreva ("Quer reservar outro?[S/N]")
+      Leia (R)
+      LimpaTela
+   Ate (R="N")
 Fimalgoritmo

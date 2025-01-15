@@ -1,16 +1,10 @@
-Algoritmo "QUAL-TRIANGULO"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 02/09/2024
+Algoritmo "qual-triangulo"
+
 Var
-   // Seção de Declarações das variáveis
    R1,R2,R3:Real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   EscrevaL ("   Descobrindo qual é o triângulo")
+   EscrevaL ("   Descobrindo qual Ã© o triÃ¢ngulo")
    EscrevaL ("------------------------------------")
    Escreva ("Valor da primeira reta:")
    Leia (R1)
@@ -20,21 +14,17 @@ Inicio
    Leia (R3)
    Se (R1 < (R2+R3)) e (R2 < (R1+R3)) e (R3 < (R1+R2)) entao
       Se (R1=R2) e (R2=R3) entao
-         Escreva ("Os valores formam um triângulo EQUILÁTERO")
+         Escreva ("Os valores formam um triÃ¢ngulo EQUILÃTERO")
       senao
          Se (R1=R2) ou (R2=R3) ou (R1=R3) entao
-            Escreva ("Os valores formam um triângulo ISÓSCELES")
+            Escreva ("Os valores formam um triÃ¢ngulo ISÃ“SCELES")
          senao
             Se (R1<>R2) e (R2<>R3) e (R1<>R3) entao
-               Escreva ("Os valores formam um triângulo ESCALENO")
+               Escreva ("Os valores formam um triÃ¢ngulo ESCALENO")
             senao
-               Escreva ("Os valores formam um triângulo")
+               Escreva ("Os valores formam um triÃ¢ngulo")
             FimSe
          FimSe
       FimSe
    FimSe
-
-   
-
-
 Fimalgoritmo
