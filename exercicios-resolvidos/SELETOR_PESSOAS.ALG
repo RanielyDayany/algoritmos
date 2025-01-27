@@ -1,15 +1,10 @@
-Algoritmo "SELETOR_PESSOAS"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 01/07/2024
+Algoritmo "seletor_pessoas"
+
 Var
-   // Seção de Declarações das variáveis
    S,R:caractere
    I,C,ContF,ContM:inteiro
+
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
    Repita
       EscrevaL ("|===================|")
       EscrevaL ("|SELETOR DE PESSOAS |")
@@ -36,10 +31,6 @@ Inicio
       Escreva ("Quer continuar? [S/N]: ")
       Leia (R)
    Ate (R= "N")
-   EscrevaL ("O total de homens maiores de 18 e com cabelo castanho é de ",ContM)
-   EscrevaL ("O total de mulheres entre 25 e 30 com cabelo loiro é de ",ContF)
-
-
-
-
+   EscrevaL ("O total de homens maiores de 18 e com cabelo castanho Ã© de ",ContM)
+   EscrevaL ("O total de mulheres entre 25 e 30 com cabelo loiro Ã© de ",ContF)
 Fimalgoritmo
