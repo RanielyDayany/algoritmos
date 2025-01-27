@@ -1,4 +1,4 @@
-Algoritmo "seletor-pessoas"
+Algoritmo "seletor_pessoas"
 
 Var
    S,R:caractere
@@ -20,12 +20,14 @@ Inicio
       EscrevaL ("[3] Loiro")
       EscrevaL ("[4] Ruivo")
       Leia (C)
+
       Se ((S = "M") e (I >= 18) e (C = 2)) entao
          ContM<- ContM +1
       FimSe
       Se ((S = "F") e ((I >=25) e (I <=30)) e (C = 3)) entao
          ContF<-ContF+1
       FimSe
+
       Escreva ("Quer continuar? [S/N]: ")
       Leia (R)
    Ate (R= "N")

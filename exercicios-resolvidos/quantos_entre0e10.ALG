@@ -1,9 +1,9 @@
-Algoritmo "quantos-entre0e10"
+Algoritmo "quantos_entre0e10"
 
-Var
+Var 
    V,Total,C,S:inteiro
 
-Inicio 
+Inicio
    Total <-0
    S <- 0
    Para  C <- 1 ate 5 faca
@@ -16,6 +16,7 @@ Inicio
          FimSe
       FimSe
    FimPara
-   EscrevaL ("Ao todo foram encontrados ",Total," números de 0 a 10")
+   Escreval ("Ao todo foram encontrados ",Total," números de 0 a 10")
    Escreva  ("Nesse intervalo a soma dos números ímpares é de ",S)
+
 Fimalgoritmo
