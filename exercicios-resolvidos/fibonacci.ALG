@@ -1,4 +1,4 @@
-Algoritmo "fibonati"
+Algoritmo "fibonacci"
 
 // Descrição:Mostra a escala Fibonati.
 

@@ -1,0 +1,29 @@
+Algoritmo "sortearNumero"
+// Descrição:Sorteia um número entre 1 a 5
+
+Var
+
+NumS:inteiro
+N,cont:inteiro
+R:caractere
+
+Inicio
+   cont<-1
+   NumS<- randi(4)+1
+   EscrevaL ("========================================")
+   EscrevaL ("          Adivinhe o número:")
+   EscrevaL ("========================================")
+   Enquanto cont<=3 faca
+   cont<-cont+1
+   EscrevaL ("Digite um número entre 1 a 5:")
+   Leia(N)
+   Se (N=NumS) entao
+      EscrevaL("Você acertou!O número secreto é ",NumS)
+      interrompa
+   FimSe
+   FimEnquanto
+   Se (N<> NumS) entao
+      EscrevaL("Você errou!O número secreto é ",NumS)
+   FimSe
+
+Fimalgoritmo
