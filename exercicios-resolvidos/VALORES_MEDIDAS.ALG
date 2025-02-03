@@ -1,9 +1,9 @@
-Algoritmo "valores-medidas"
+Algoritmo "valores_medidas"
 
-Var
+Var 
     M,Km,Hm,Dam,dm,cm,mm:Real
 
-Inicio
+Inicio 
    EscrevaL ("Digite uma distância em metros:")
    Leia (M)
    Km <- M/1000

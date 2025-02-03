@@ -9,5 +9,9 @@ Inicio
                EscrevaL (C1,C2)
           FimPara
      FimPara
+<<<<<<< HEAD:exercicios-resolvidos/combinacoes.ALG
 
 Fimalgoritmo
+=======
+Fimalgoritmo
+>>>>>>> correcao-erros:exercicios-resolvidos/COMBINACOES.ALG
