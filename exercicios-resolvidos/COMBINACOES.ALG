@@ -9,5 +9,4 @@ Inicio
                EscrevaL (C1,C2)
           FimPara
      FimPara
-
 Fimalgoritmo
