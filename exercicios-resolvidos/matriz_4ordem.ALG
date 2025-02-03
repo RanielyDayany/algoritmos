@@ -40,9 +40,4 @@ Inicio
    EscrevaL("O produto dos valores da segunda linha é ",p2L)
    EscrevaL("O maior valor da terceira coluna é ",m3C)
    EscrevaL("A média dos valores da primeira linha é ",media1L)
-   
-   
-
-
-
 Fimalgoritmo

@@ -1,14 +1,13 @@
 Algoritmo "vetores"
 
-Var
- 
+Var 
    V:vetor [1..7] de inteiro
    C,Par:inteiro
 
-Inicio 
+Inicio
    Par <-0
    Para C <-1 ate 7 faca
-      Escreva ("Digite o ",C,"º valor:")
+      Escreva ("Digite o ",C,"é valor:")
       Leia (V[C])
       Se (V[C] %2=0) entao
          Par <-Par +1
