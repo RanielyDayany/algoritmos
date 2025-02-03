@@ -3,27 +3,41 @@ Algoritmo "sortearNumero"
 
 Var
 
-NumS:inteiro
-N,cont:inteiro
 R:caractere
 
-Inicio
-   cont<-1
-   NumS<- randi(4)+1
+Procedimento EscNumero():
+var
+   cont,NumS,N:inteiro
+
+inicio
+   cont <-1
+   NumS<-randi(4)+1
    EscrevaL ("========================================")
    EscrevaL ("          Adivinhe o número:")
    EscrevaL ("========================================")
    Enquanto cont<=3 faca
-   cont<-cont+1
-   EscrevaL ("Digite um número entre 1 a 5:")
-   Leia(N)
-   Se (N=NumS) entao
-      EscrevaL("Você acertou!O número secreto é ",NumS)
-      interrompa
-   FimSe
+      cont<-cont+1
+      EscrevaL ("Digite um número entre 1 a 5:")
+      Leia(N)
+      Se (N=NumS) entao
+         EscrevaL("Você acertou!O número secreto é ",NumS)
+         interrompa
+      FimSe
    FimEnquanto
    Se (N<> NumS) entao
       EscrevaL("Você errou!O número secreto é ",NumS)
    FimSe
+fimprocedimento
+
+Inicio
+   EscNumero()
+   Repita
+   EscrevaL("Quer tentar novamente?[S/N]")
+   Leia (R)
+   Se (R="S") entao
+      LimpaTela
+      EscNumero()
+   FimSe
+   Ate (R="N")
 
 Fimalgoritmo
