@@ -1,0 +1,23 @@
+Algoritmo "financiamentoImovel"
+
+Var
+   Val,Sal,QntAno,Parcelas,ValorP,Exc:Real
+
+Inicio
+   EscrevaL("Cálculo de parcelas pra compra de imóvel:")
+   Escreva("Valor do imóvel: ")
+   Leia(Val)
+   Escreva("Salário: ")
+   Leia(Sal)
+   Escreva("Em quantos anos deseja pagar o imóvel:")
+   Leia(QntAno)
+   ValorP <- Val / (QntAno *12)
+   Exc <- Sal *(30/100)
+   Se (ValorP > Exc) entao
+      EscrevaL("Parcelas no valor de R$",ValorP:5:2)
+      EscrevaL("Financiamento negado,o valor das parcelas excede 30% do salário")
+   senao
+      EscrevaL("Parcelas no valor de R$",ValorP:5:2)
+      Escreva("Financiamento concedido")
+   FimSe
+Fimalgoritmo
