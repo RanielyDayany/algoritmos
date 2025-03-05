@@ -1,121 +1,117 @@
-Algoritmo "jogo-da-velha"
+Algoritmo "jogo-da-velha1"
 
-Var
-   v:vetor[1..3,1..3] de caractere
+//perguntar quem vai começar o x ou o
+//lembrar de colocar as poçoes vencedoras,se é na vertical,horizontal ou diagonal
+//
+var
+v: vetor[1..3, 1..3] de Caractere
+  L, C, Cont, Po: Inteiro
+  Simb : Caractere
+  R: Logico
 
-   l,c,cont,Po:inteiro
-   R:Logico
-   simb:caractere
-
-Procedimento MostraVelha()
-inicio
-   EscrevaL ("===========================")
-   EscrevaL ("     JOGO DA VELHA         ")
-   EscrevaL ("===========================")
-   EscrevaL ("+---+---+----+")
-   Para l <-1 ate 3 faca
-      Para c<-1 ate 3 faca
-         Escreva("| ",v[l,c]:2)
-
+Procedimento mostraVelha()
+Inicio
+   EscrevaL("+---+---+---+")
+   Para L <- 1 ate 3 faca
+      Para C <- 1 ate 3 faca
+         Escreva("|  ", v[L,C]:1)
       FimPara
-      EscrevaL(" | ")
-
-      EscrevaL("+---+---+----+")
+      Escreva("|")
+      EscrevaL()
+      EscrevaL("+---+---+---+")
    FimPara
-fimprocedimento
+FimProcedimento
 
-Procedimento MudaJogador():caractere
+Procedimento mudaJogador()
 inicio
-   Se (simb="X") entao
-      simb<-"O"
+   Se (Simb = "X") entao
+      Simb <- "O"
    senao
-      simb<-"X"
+      Simb <- "X"
    FimSe
 FimProcedimento
 
-Funcao Jogar(s:caractere;p:inteiro):Logico
-var
-   mudou:logico
+Funcao Jogar(S: Caractere; P: Inteiro): Logico
+Var mudou: logico
 inicio
-   mudou<-falso
-   Para l<-1 ate 3 faca
-      Para c<-1 ate 3 faca
-         Se (v[l,c]=Numpcarac(p)) entao
-            v[l,c]<-s
-            mudou<-verdadeiro
+   mudou <- falso
+   Para L <- 1 ate 3 faca
+      Para C <- 1 ate 3 faca
+         Se(v[L,C] = NumpCarac(P)) entao
+            v[L,C] <- S
+            mudou <- verdadeiro
          FimSe
       FimPara
    FimPara
    Retorne mudou
 FimFuncao
 
-Funcao TerminouJogo():logico
-var
-   velha:inteiro
-   Terminou:logico
+Funcao TerminouVelha(): Logico
+Var
+  terminou: Logico
+  ocorr: Inteiro
 inicio
-   velha<-0
-   Terminou<-falso
-
-   //Jogo em linha
-   Para c<-1 ate 3 faca
-      Se (v[1,c] = v[2,c]) e (v[2,c] = v[3,c]) entao
-         Terminou<-verdadeiro
+   terminou <- falso
+   // Jogos em linha
+   Para L <- 1 ate 3 faca
+      Se (v[L,1] = v[L,2]) e (v[L,2] = v[L,3]) entao
+         terminou <- verdadeiro
       FimSe
    FimPara
-
-   //Jogo em coluna
-   Para l<-1 ate 3 faca
-      Se (v[l,1] = v[l,2]) e (v[l,2] = v[l,3]) entao
-         Terminou<-verdadeiro
+   // Jogos em coluna
+   Para C <- 1 ate 3 faca
+      Se (v[1,C] = v[2,C]) e (v[2,C] = v[3,C]) entao
+         terminou <- verdadeiro
       FimSe
    FimPara
-
-   //Jogo em diagonal
+   // Jogos em diagonal
    Se (v[1,1] = v[2,2]) e (v[2,2] = v[3,3]) entao
-      Terminou<-verdadeiro
+      terminou <- verdadeiro
    FimSe
    Se (v[1,3] = v[2,2]) e (v[2,2] = v[3,1]) entao
-      Terminou<-verdadeiro
+      terminou <- verdadeiro
    FimSe
 
-   //Jogo em velha
-   Para l<-1 ate 3 faca
-      Para c<-1 ate 3 faca
-         Se(v[l,c] <> "X") ou (v[l,c]<>"O") entao
-            velha<-velha+1
-         FimSe
-         Se (velha=0) entao
-            Terminou<-verdadeiro
+   // Jogos em VELHA
+   ocorr <- 0
+   Para L <- 1 ate 3 faca
+      Para C <- 1 ate 3 faca
+         Se (v[L,C] <> "X") e (v[L,C] <> "O") entao
+            ocorr <- ocorr + 1
          FimSe
       FimPara
    FimPara
-   Retorne Terminou
-fimfuncao
+   Se (ocorr = 0) entao
+      terminou <- verdadeiro
+   FimSe
 
-Inicio
-   cont<-1
-   simb<-"X"
-   Para l<-1 ate 3 faca
-      Para c<-1 ate 3 faca
-         v[l,c]<-Numpcarac(cont)
-         cont<-cont+1
+   // Retorna se o jogo acabou ou nao
+   Retorne terminou
+FimFuncao
+
+inicio
+   Cont <- 1
+   Simb <- "X"
+   Para L <- 1 ate 3 faca
+      Para C <- 1 ate 3 faca
+         v[L,C] <- NumpCarac(Cont)
+         Cont <- Cont + 1
       FimPara
    FimPara
    MostraVelha()
    Repita
       Repita
-         EscrevaL("Vai jogar [",simb,"] em qual posiÃ§Ã£o?")
+         EscrevaL("Vai jogar [", simb:1, "] em qual posicao? ")
          Leia(Po)
-         R<-Jogar(simb,Po)
-         Se (R=falso) entao
-            Escreva("JOGADA INVÃLIDA!")
+         R <- Jogar(Simb, Po))
+         Se (R = falso) entao
+            EscrevaL("JOGADA INVALIDA!")
          FimSe
-      Ate (R=verdadeiro)
+      Ate (R = verdadeiro)
       MudaJogador()
       LimpaTela
       MostraVelha()
+   Ate (terminouVelha() = verdadeiro)
+   EscrevaL("JOGO FINALIZADO!!!")
+fimalgoritmo
 
-   Ate (TerminouJogo=verdadeiro)
-   EscrevaL("JOGO FINALIZADO!")
-Fimalgoritmo
