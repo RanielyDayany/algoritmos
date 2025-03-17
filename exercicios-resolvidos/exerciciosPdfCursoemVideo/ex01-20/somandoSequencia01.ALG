@@ -6,7 +6,7 @@ Var
 Inicio
    NT<-6
    EscrevaL("------------------------")
-   EscrevaL("  Somando em sequência  ")
+   EscrevaL("  Somando em sequencia  ")
    EscrevaL("------------------------")
    Enquanto (i <= 100) faca
       Escreva(NT," +")
