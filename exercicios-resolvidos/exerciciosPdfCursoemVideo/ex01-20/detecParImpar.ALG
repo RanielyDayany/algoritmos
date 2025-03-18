@@ -8,10 +8,10 @@ Inicio
    pares <- 0
    impares <- 0
    EscrevaL("----------------------------")
-   EscrevaL("  Detectando par ou ímpar:  ")
+   EscrevaL("  Detectando par ou impar:  ")
    EscrevaL("----------------------------")
    Enquanto i <= 6 faca
-      Escreva("Digite o ",i,"º número:")
+      Escreva("Digite o ",i,"Âº numero:")
       Leia (n)
       Se (n%2=0) entao
          pares <-pares + 1
