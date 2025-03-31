@@ -1,33 +1,30 @@
 Algoritmo "precoProdutos"
-//  Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela
-//qual foi o maior e qual foi o menor preço digitados.
-
 Var
    i:inteiro
    P,maior,menor:real
 Inicio
-   i <-1
+   i <- 1
    EscrevaL("------------------------")
-   EscrevaL("   Preço de produtos:   ")
+   EscrevaL("   PreÃ§o de produtos:   ")
    EscrevaL("------------------------")
    Enquanto i <= 8 faca
-      Escreva ("Digite o preço do ",i,"º produto R$")
+      Escreva ("Digite o preÃ§o do ",i,"Âº produto R$")
       Leia (P)
       Se i = 1 entao
-         maior <-P
-         menor <-P
+         maior <- P
+         menor <- P
       FimSe
       Se P < menor entao
-         menor <-P
+         menor <- P
       senao
          Se P > maior entao
-         maior <- P
+            maior <- P
       FimSe
       i <- i + 1
    FimEnquanto
    
-   EscrevaL("O preço do maior produto foi R$",maior)
-   EscrevaL("O preço do menor produto foi R$",menor)
+   EscrevaL("O preÃ§oo do maior produto foi R$",maior)
+   EscrevaL("O preÃ§o do menor produto foi R$",menor)
 
 
 Fimalgoritmo
