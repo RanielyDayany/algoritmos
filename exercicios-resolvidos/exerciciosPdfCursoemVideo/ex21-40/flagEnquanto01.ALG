@@ -8,7 +8,7 @@ Inicio
    EscrevaL("")
    soma <-0
    Enquanto (n <> 1111)  faca
-      Escreva("Digite um número:")
+      Escreva("Digite um numero:")
       Leia (n)
       Se (n <>1111) entao
          soma <- soma+n
