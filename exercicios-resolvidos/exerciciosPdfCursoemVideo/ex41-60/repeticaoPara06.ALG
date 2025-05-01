@@ -1,14 +1,10 @@
 Algoritmo "repeticaoPara06"
-//Desenvolva um programa que leia o primeiro termo e a razão de uma
-//PA (Progressão Aritmética), mostrando na tela os 10 primeiros elementos da PA e
-//a soma entre todos os valores da sequência.
+
 Var
-// Seção de Declarações das variáveis 
    valor,razao,pa,c:inteiro
-   proximo,soma,subtracao,somaTodos:inteiro
+   proximo1,soma:inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
    EscrevaL("PROGRESSAO ARITMETICA:")
    Escreva("Primeiro termo da PA:")
    Leia(valor)
@@ -20,28 +16,43 @@ Inicio
          Escreva(valor)
       FimPara
    senao
-      EscrevaL("Escolha o tipo de PA:")
+      EscrevaL("Opcao:")
       EscrevaL("1.PA crescente")
       EscrevaL("2.PA decrescente")
+      Repita
+      Escreva("Escolha o tipo de PA:")
       Leia(pa)
+      Ate (pa=1) ou (pa=2)
       Escolha pa
          Caso 1
+
+            soma <- valor
+            EscrevaL("-----------------------------------")
+            EscrevaL("Resultado:")
             Escreva(valor)
             Para c<-1 ate 10 faca
-               soma <- valor + razao
-               proximo <- soma
-               valor <- proximo
-               Escreva(proximo)
+               proximo1 <- valor + razao
+               soma <- proximo1+soma
+               valor <- proximo1
+               Escreva(proximo1)
             FimPara
+            EscrevaL("")
+            EscrevaL("-----------------------------------")
+            EscrevaL("A soma dos valores e:",soma)
          Caso 2
+            soma <- valor
+            EscrevaL("----------------------------------")
+            EscrevaL("Resultado:")
             Escreva(valor)
             Para c<-1 ate 10 faca
-               subtracao <- valor - razao
-               proximo <- subtracao
-               valor <- proximo
-               Escreva(proximo)
+               proximo1<- valor - razao
+               soma <- proximo1+(soma)
+               valor <- proximo1
+               Escreva(proximo1)
             FimPara
+            EscrevaL("")
+            EscrevaL("----------------------------------")
+            Escreva("A soma dos valores e:",soma)
       FimEscolha
    FimSe
-
 Fimalgoritmo
