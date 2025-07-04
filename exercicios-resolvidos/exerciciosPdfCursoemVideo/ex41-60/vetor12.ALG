@@ -1,26 +1,53 @@
 Algoritmo "vetor12"
-//82) Faça um algoritmo que leia a nota de 10 alunos de uma turma e guarde-as em
-//um vetor. No final, mostre:
-//a) Qual é a média da turma
-//b) Quantos alunos estão acima da média da turma
-//c) Qual foi a maior nota digitada
-//d) Em que posições a maior nota aparece
+
 Var
-   notas:vetor [1..10] de inteiro
-   media:real
+   nota:vetor [1..10] de inteiro
+   posicao:vetor[1..10] de inteiro
+   media,maiorNota,soma:real
+   i,posTotal,acima:inteiro
 
 
 Inicio
    soma <- 0
    media <- 0
+   maiorNota<-0
+   posTotal<-0
+   acima<-0
+
    EscrevaL("---------------------")
-   EscrevaL("  NOTAS:"0
-   EscrevaL("----------------------")
+   EscrevaL("       NOTAS:        ")
+   EscrevaL("---------------------")
    Para i<-1 ate 10 faca
-      Escreva(i,"° Nota: ")
-      Leia(nota[i])
+      nota[i]<-randi(9)+1
+      EscrevaL(i,"° Nota: ",nota[i])
       soma <- soma +nota[i]
+      Se (nota[i] > maiorNota) entao
+         maiorNota<-nota[i]
+      FimSe
    FimPara
+   
+   media<-soma/10
+   EscrevaL("")
+   EscrevaL("RESULTADO:")
+   EscrevaL("")
+   EscrevaL("A media da turma e:",media)
+   EscrevaL("A maior nota digitada foi: ",maiorNota)
+   Escreva("A maior nota esta na posicao:")
+   Para i<- 1 ate 10 faca
+   //Adiciona um contador pra nao ter posicoes vazias no vetor
+   //Percorre o vetor e guarda as maiores notas no vetor posicao
+      Se(maiorNota = nota[i]) entao
+         posTotal<-posTotal+1
+         posicao[posTotal]<- i
+         Escreva(posicao[posTotal],"")
+      FimSe
+   //Verifica se a nota e maior que a media e adiciona 1 a cada vez que for verdadeiro
+      Se(nota[i] > media) entao
+         acima <-acima + 1
+      FimSe
+   FimPara
+   EscrevaL("")
+   EscrevaL("Alunos acima da media da turma: ",acima)
    
 
 
