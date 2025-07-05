@@ -19,7 +19,7 @@ Inicio
    EscrevaL("---------------------")
    Para i<-1 ate 10 faca
       nota[i]<-randi(9)+1
-      EscrevaL(i,"° Nota: ",nota[i])
+      EscrevaL(i,"Â° Nota: ",nota[i])
       soma <- soma +nota[i]
       Se (nota[i] > maiorNota) entao
          maiorNota<-nota[i]
