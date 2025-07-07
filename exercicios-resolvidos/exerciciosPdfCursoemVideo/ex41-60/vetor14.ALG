@@ -1,28 +1,26 @@
 Algoritmo "vetor14"
-//84) Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses
-//valores em dois vetores, em posiï¿½ï¿½es relacionadas. No final, mostre uma listagem
-//contendo apenas os dados das pessoas menores de idade.
+
 Var
    nome:vetor[1..9] de caractere
    idade:vetor[1..9] de inteiro
-   menor:vetor[1..9] de inteiro
-   c,menorDeIdade:inteiro
+   c:inteiro
 Inicio
-//Falta colocar verificao de nome e idade validas
+
    Para c<-1 ate 9 faca
-      Escreva(c,"Â° Nome: ")
-      Leia(nome[c])
-      Escreva(c,"Â° Idade: ")
-      Leia(idade[c])
+      Repita
+         Escreva(c,"° Nome: ")
+         Leia(nome[c])
+      Ate (nome[c] <> "")
+      Repita
+         Escreva(c,"° Idade: ")
+         Leia(idade[c])
+      Ate (idade[c] > 0)
    FimPara
    EscrevaL("-----------------------------")
    EscrevaL("Pessoas com menos de 18 anos:")
    EscrevaL("")
-   EscrevaL("Menor de idade: ")
    Para c<-1 ate 9 faca
       Se (idade[c] < 18) entao
-         menorDeIdade<-menorDeIdade+1
-         menor[menorDeIdade]<-c
          EscrevaL(nome[c]," com ",idade[c])
       FimSe
    FimPara
