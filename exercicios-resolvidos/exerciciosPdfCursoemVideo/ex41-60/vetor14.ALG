@@ -8,11 +8,11 @@ Inicio
 
    Para c<-1 ate 9 faca
       Repita
-         Escreva(c,"° Nome: ")
+         Escreva(c,"Â° Nome: ")
          Leia(nome[c])
       Ate (nome[c] <> "")
       Repita
-         Escreva(c,"° Idade: ")
+         Escreva(c,"Â° Idade: ")
          Leia(idade[c])
       Ate (idade[c] > 0)
    FimPara
