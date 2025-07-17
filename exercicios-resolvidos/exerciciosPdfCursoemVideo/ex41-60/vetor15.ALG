@@ -1,23 +1,30 @@
 Algoritmo "vetor15"
-//Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e
-//guarde esses dados em três vetores. No final, mostre uma listagem contendo
-//apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
 
 Var
    nome:vetor [1..5] de caractere
    sexo:vetor [1..5] de caractere
    salario:vetor [1..5] de real
-   c:inteiro
-
-
+   posf:vetor[1..5] de inteiro
+   c,totf:inteiro
 Inicio
+   totf<-0
    Para c<- 1 ate 5 faca
       Escreva("Nome:")
       Leia(nome[c])
-      Escreva("Sexo:")
-      Leia(sexo[c])
+      Repita
+            Escreva("Sexo (F/M):")
+            Leia(sexo[c])
+      Ate (sexo[c]="F")ou(sexo[c]="f")ou(sexo[c]="M")ou(sexo[c]="m")
       Escreva("Salario:")
       Leia(salario[c])
+      Se((sexo[c]="F") ou (sexo[c]="f"))e(salario[c]>=5000) entao
+         totf <- totf + 1
+         posf[totf]<-c
+      FimSe
       EscrevaL("-----------------------")
+   FimPara
+   EscrevaL("Mulher que ganham mais de R$5,000")
+   Para c<-1 ate totf faca
+      EscrevaL(nome[posf[c]],": ",salario[posf[c]])
    FimPara
 Fimalgoritmo
