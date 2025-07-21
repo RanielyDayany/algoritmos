@@ -48,8 +48,4 @@ Inicio
    FimPara
    EscrevaL("")
    EscrevaL("Alunos acima da media da turma: ",acima)
-   
-
-
-
 Fimalgoritmo
