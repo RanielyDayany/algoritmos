@@ -5,7 +5,7 @@ Var
 Procedimento Gerador()
 inicio
    EscrevaL("+-------======--------+")
-   EscrevaL("      Olá,mundo!       ")
+   EscrevaL("      Ola,mundo!       ")
    EscrevaL("+-------======--------+")
 
 fimProcedimento
